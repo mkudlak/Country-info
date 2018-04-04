@@ -74,4 +74,7 @@ button:active {
 table, thead{
     margin: 0 auto;
 }
+img {
+    width:100px;
+}
 
