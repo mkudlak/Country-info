@@ -1,8 +1,10 @@
 var url = "https://restcountries.eu/rest/v1/name/";
 var countryList = $('#countries');
 var country = $('#country');
+var flag = $('#flag');
 var capital = $('#capital');
 var region = $('#region');
+var subregion = $('#subregion')
 var population = $('#population');
 
 
@@ -29,8 +31,11 @@ function showCountryList(resp) {
     countryList.empty();
     resp.forEach(function(item) {
         $('<h3>').text(item.name).appendTo(country);
+        $('<p>').text("<img scr='" + item.flag + "'").appendTo(flag);
+        console.log(item.flag);
         $('<p>').text(item.capital).appendTo(capital);
         $('<p>').text(item.region).appendTo(region);
+        $('<p>').text(item.subregion).appendTo(subregion);
         $('<p>').text(item.population).appendTo(population);
     });
 }
