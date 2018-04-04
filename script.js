@@ -6,14 +6,18 @@ var capital = $('#capital');
 var region = $('#region');
 var subregion = $('#subregion')
 var population = $('#population');
-
+var countryName
 
 
 $('#search').click(function(){
     $('#show').show();
     searchCountries();
+    $('#reset').show();
 });
 
+$('#reset').click(function(){
+    location.reload();
+});
 function searchCountries() {
     var countryName = $('#country-name').val();
     if (!countryName.length) countryName = 'Poland';

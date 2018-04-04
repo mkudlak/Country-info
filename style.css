@@ -75,6 +75,8 @@ table, thead{
     margin: 0 auto;
 }
 img {
-    width:100px;
+    width: 100px;
 }
-
+#reset {
+    display: none;
+}
