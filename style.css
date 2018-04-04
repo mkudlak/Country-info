@@ -80,3 +80,9 @@ img {
 #reset {
     display: none;
 }
+
+@media(max-width: 767px) {
+    button {
+        margin-top: 10px;
+    }
+}
